@@ -44,7 +44,7 @@ include('conn/conn.php');
 
   <nav class="navbar d-flex align-items-center bg-primary col-12 px-3">
     <a class="navbar-brand text-white fw-bold" href="#">Control de Gastos</a>
-    <a class="" href="#"><i class="fa-brands fa-github h4 m-0"></i></a>
+    <a class="" href="https://github.com/CarlosM2505/Control-gastos"><i class="fa-brands fa-github h4 m-0"></i></a>
   </nav>
 
   <div class="main-panel mt-4 ml-5 col-11">
