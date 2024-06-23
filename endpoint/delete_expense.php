@@ -14,12 +14,12 @@ if (isset($_GET['expense'])) {
     if ($query_execute) {
       echo "<script>
             //alert('Gasto eliminado exitosamente!'); 
-            window.location.href = 'http://localhost/control-gastos/?deleteGasto=success';
+            window.location.href = 'http://localhost/control-gastos/home.php?deleteGasto=success';
             </script>";
     } else {
       echo "<script>
             //alert('Expense Not Deleted!'); 
-            window.location.href = 'http://localhost/control-gastos/?deleteGasto=fail';
+            window.location.href = 'http://localhost/control-gastos/home.php?deleteGasto=fail';
             </script>";
     }
   } catch (PDOException $e) {

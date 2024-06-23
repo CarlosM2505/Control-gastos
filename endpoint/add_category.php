@@ -26,7 +26,7 @@ if (empty($exist)) {
 
     echo "<script>
         // alert('Categoría Agregada Correctamente'); 
-        window.location.href = 'http://localhost/control-gastos/?addStatus=success';
+        window.location.href = 'http://localhost/control-gastos/home.php?addStatus=success';
         </script>";
   } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
@@ -34,7 +34,7 @@ if (empty($exist)) {
 } else {
   echo "<script>
     // alert('Category already exists, try adding another category'); 
-    window.location.href = 'http://localhost/control-gastos/?addStatus=exists';
+    window.location.href = 'http://localhost/control-gastos/home.php?addStatus=exists';
     </script>";
 }
 

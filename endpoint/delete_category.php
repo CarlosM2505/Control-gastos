@@ -14,12 +14,12 @@ if (isset($_GET['category'])) {
     if ($query_execute) {
       echo "<script>
             //alert('Categoría eliminada correctamente'); 
-            window.location.href = 'http://localhost/control-gastos/?deleteCategory=success';
+            window.location.href = 'http://localhost/control-gastos/home.php?deleteCategory=success';
             </script>";
     } else {
       echo "<script>
             //alert('Categoía aun no ha sido eliminada!'); 
-            window.location.href = 'http://localhost/control-gastos/?deleteCategory=fail';
+            window.location.href = 'http://localhost/control-gastos/home.php?deleteCategory=fail';
             </script>";
     }
   } catch (PDOException $e) {

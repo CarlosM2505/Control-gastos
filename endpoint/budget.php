@@ -9,5 +9,5 @@ $stmt->execute();
 
 echo "<script>
 //alert('Monthly Budget Updated Sucessfully'); 
-window.location.href = 'http://localhost/control-gastos/?updateMonthly=success';
+window.location.href = 'http://localhost/control-gastos/home.php?updateMonthly=success';
 </script>";

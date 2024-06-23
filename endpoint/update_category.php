@@ -11,5 +11,5 @@ $stmt->execute();
 
 echo "<script>
 //alert('Categoría actualiza correctamente'); 
-window.location.href = 'http://localhost/control-gastos/?updateCategory=success';
+window.location.href = 'http://localhost/control-gastos/home.php?updateCategory=success';
 </script>";

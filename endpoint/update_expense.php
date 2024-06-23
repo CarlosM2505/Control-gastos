@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->execute()) {
       echo "<script>
            // alert('Gasto actualizado correctamente'); 
-            window.location.href = 'http://localhost/control-gastos/?updateGasto=success';
+            window.location.href = 'http://localhost/control-gastos/home.php?updateGasto=success';
             </script>";
     } else {
       echo "Error: " . $stmt->errorInfo()[2];

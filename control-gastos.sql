@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-06-2024 a las 17:19:53
+-- Tiempo de generación: 23-06-2024 a las 17:28:56
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -85,6 +85,25 @@ INSERT INTO `tbl_expense_category` (`tbl_expense_category_id`, `category_name`, 
 (7, 'Salud y Bienestar', 2500),
 (8, 'Pago Universidad', 2000);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbl_user`
+--
+
+CREATE TABLE `tbl_user` (
+  `id` int(11) NOT NULL,
+  `usuario` varchar(100) NOT NULL,
+  `clave` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`id`, `usuario`, `clave`) VALUES
+(1, 'carlos00', 'cm00');
+
 --
 -- Índices para tablas volcadas
 --
@@ -102,6 +121,12 @@ ALTER TABLE `tbl_expense_category`
   ADD PRIMARY KEY (`tbl_expense_category_id`);
 
 --
+-- Indices de la tabla `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -109,13 +134,19 @@ ALTER TABLE `tbl_expense_category`
 -- AUTO_INCREMENT de la tabla `tbl_expense`
 --
 ALTER TABLE `tbl_expense`
-  MODIFY `tbl_expense_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `tbl_expense_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_expense_category`
 --
 ALTER TABLE `tbl_expense_category`
   MODIFY `tbl_expense_category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+
+--
+-- AUTO_INCREMENT de la tabla `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

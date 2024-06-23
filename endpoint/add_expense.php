@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     echo "<script>
         //alert('Gasto agregado correctamente'); 
-        window.location.href = 'http://localhost/control-gastos/?addExpense=success';
+        window.location.href = 'http://localhost/control-gastos/home.php?addExpense=success';
         </script>";
   } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
